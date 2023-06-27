@@ -1,0 +1,34 @@
+# FastAPI-HAK
+
+Une application back-end qui gère des ressources représentant des utilisateurs, des entreprises, planing
+et des roles.
+
+# Exécution de l'application
+Une seule façons de lancer l'application "uvicorn"
+L'application se doit de se lancer avec le serveur
+"uvicorn"
+
+# Mode Uvicorn
+**Prérequis :** Python 3.10 ou une version ultérieure installée.
+Tout d'abord, installez les dépendances :
+`pip install -r requirements.txt`
+
+Ensuite, exécutez l'application avec la commande suivante :
+`uvicorn users:app --reload`
+
+# Principalités :
+
+- Sqlite et Sqlalchemy ont été utiliser comme BDD
+- L'application n'est composer que de 2 fichiers essentiels (users et user)
+- Pour execution vous devez lancer `uvicorn users:app --reload`
+                                   `uvicorn user:app --reload`
+- Le fichiers (users) fait un CRUD et enregistre toutes les données dans la BDD (Sqlite)
+- Sqlalchemy a été utiliser car cela simplifie l'utilisation beaucoup l'utilisation de (Sqlite), Bon !!! à mon avis.
+
+- Le deuxième fichiers (user) fait egalement un crud, mais enregistre les données dans une simple DB (Data Base) que j'ai créer.
+
+- L'authentification, attribution de role à un user afin de lui donner des droits, fais la liaison entre 
+mes fichiers ====> sont des notions toujours compliquées pour moi pour l'instant, mais je vais continuer
+à m'exercer et bien comprendre au fil du temps.
+
+- Très bon Projet...
